@@ -14,25 +14,27 @@
 	},
 	"dependencies": {
 		"@prismicio/client": "^5.0.0",
-		"@types/sass": "^1.43.1",
 		"date-fns": "^2.22.1",
-		"next": "12.0.4",
+		"next": "12.3.0",
 		"prismic-dom": "^2.2.5",
-		"react": "17.0.2",
-		"react-dom": "17.0.2",
-		"sass": "^1.56.1"
+		"react": "18.2.0",
+		"react-dom": "18.2.0",
+		"sass": "^1.55.0"
 	},
 	"devDependencies": {
-		"@types/node": "18.11.9",
-		"@types/prismic-dom": "^2.1.1",
-		"@types/react": "17.0.2",
-		"@types/react-dom": "17.0.2",
-		"@typescript-eslint/eslint-plugin": "^5.39.0",
-		"@typescript-eslint/parser": "^5.39.0",
 		"commitizen": "^4.2.5",
 		"cz-conventional-changelog": "3.3.0",
-		"eslint": "8.28.0",
-		"eslint-config-next": "12.0.4",
+		"husky": "^8.0.0",
+		"@types/prismic-dom": "^2.1.1",
+		"@types/node": "18.11.5",
+		"@types/react": "18.0.23",
+		"@types/react-dom": "18.0.7",
+		"@types/react-modal": "^3.13.1",
+		"@types/sass": "^1.43.1",
+		"@typescript-eslint/eslint-plugin": "^5.39.0",
+		"@typescript-eslint/parser": "^5.39.0",
+		"eslint": "8.26.0",
+		"eslint-config-next": "13.0.0",
 		"eslint-config-prettier": "^8.5.0",
 		"eslint-plugin-import": "^2.26.0",
 		"eslint-plugin-n": "^15.2.5",
@@ -40,13 +42,12 @@
 		"eslint-plugin-promise": "^6.0.1",
 		"eslint-plugin-react": "^7.27.1",
 		"eslint-plugin-react-hooks": "^4.3.0",
-		"husky": "^8.0.0",
 		"prettier": "^2.7.1",
 		"typescript": "^4.8.4"
 	},
 	"resolutions": {
-		"@types/react": "17.0.2",
-		"@types/react-dom": "17.0.2"
+		"@types/react": "18.0.23",
+		"@types/react-dom": "18.0.7"
 	},
 	"config": {
 		"commitizen": {
