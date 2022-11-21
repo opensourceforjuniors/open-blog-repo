@@ -15,6 +15,8 @@
 - Typescript
 - NextJs
 - Sass
+- Prismic
+
 
 
 ## How to run the project
