@@ -11,11 +11,11 @@ export const Header = () => {
 				<p>Open Source for Juniors</p>
 				<nav>
 					<ActiveLink href="/" activeHref={styles.active}>
-						<p>Home</p>
+						<a>Home</a>
 					</ActiveLink>
 
 					<ActiveLink href="/posts" activeHref={styles.active}>
-						<p>Posts</p>
+						<a>Posts</a>
 					</ActiveLink>
 				</nav>
 			</div>

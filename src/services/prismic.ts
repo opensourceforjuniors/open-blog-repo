@@ -4,7 +4,7 @@ export const getPrismicClient = (req?: unknown) => {
 	const prismic = Prismic.client('https://open-blog-repo.prismic.io/api/v2', {
 		req,
 		accessToken:
-			'MC5ZM3RNWnhBQUFDWUE0S1hj.Xe-_ve-_vUDvv73vv73vv71P77-9NO-_vUl4Hu-_vWXvv70V77-9Ee-_ve-_vXbvv73vv71f77-977-977-9Xe-_vSM'
+			'MC5ZM3RnQWhBQUFDY0E0UVFw.77-977-977-9GO-_vUsu77-9CGAe77-977-9ABrvv73vv73vv73vv73vv73vv71J77-9PWIJ77-977-977-977-977-977-9'
 	})
 
 	return prismic
