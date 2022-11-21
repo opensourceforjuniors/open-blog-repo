@@ -4,7 +4,7 @@ import Prismic from '@prismicio/client'
 import { RichText } from 'prismic-dom'
 import Link from 'next/link'
 import styles from './posts.module.scss'
-import { getPrismicClient } from '../../services/prismic'
+import { prismic } from '../../services/prismic'
 import Head from 'next/head'
 
 interface Post {
@@ -38,16 +38,6 @@ interface PrismicDocument {
 }
 
 export default function Posts({ posts }: PostsProps) {
-	const RefreshPage = () => {
-		window.location.reload()
-	}
-
-	React.useEffect(() => {
-		setTimeout(() => {
-			RefreshPage()
-		}, 10000)
-	}, [])
-
 	return (
 		<>
 			<Head>
@@ -71,7 +61,14 @@ export default function Posts({ posts }: PostsProps) {
 }
 
 export const getStaticProps: GetStaticProps = async () => {
-	const prismic = getPrismicClient()
+	setTimeout(async () => {
+		const response = await prismic.query([Prismic.predicates.at('document.type', 'post')], {
+			fetch: ['post.title', 'post.content'],
+			pageSize: 100
+		})
+
+		return response
+	}, 1000)
 
 	const response = await prismic.query([Prismic.predicates.at('document.type', 'post')], {
 		fetch: ['post.title', 'post.content'],

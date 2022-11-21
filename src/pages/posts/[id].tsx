@@ -2,7 +2,7 @@ import { GetStaticPaths, GetStaticProps } from 'next'
 import Head from 'next/head'
 import { useRouter } from 'next/router'
 import { RichText } from 'prismic-dom'
-import { getPrismicClient } from '../../services/prismic'
+import { prismic } from '../../services/prismic'
 import styles from './post.module.scss'
 
 interface PostProps {
@@ -63,7 +63,6 @@ export const getStaticPaths: GetStaticPaths = async () => {
 
 export const getStaticProps: GetStaticProps = async context => {
 	const { id } = context.params as { id: string }
-	const prismic = getPrismicClient()
 	const response = await prismic.getByUID('post', String(id), {})
 	const document = response as PrismicDocument
 	const post = {
