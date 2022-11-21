@@ -38,6 +38,16 @@ interface PrismicDocument {
 }
 
 export default function Posts({ posts }: PostsProps) {
+	const RefreshPage = () => {
+		window.location.reload()
+	}
+
+	React.useEffect(() => {
+		setTimeout(() => {
+			RefreshPage()
+		}, 10000)
+	}, [])
+
 	return (
 		<>
 			<Head>

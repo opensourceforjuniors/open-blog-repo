@@ -6,7 +6,7 @@ export const Header = () => {
 		<header className={styles.container}>
 			<div className={styles.content}>
 				<picture>
-					<img src="logo.png" alt="DevNews!" />
+					<img src="logo.png" alt="logo" />
 				</picture>
 				<p>Open Source for Juniors</p>
 				<nav>
