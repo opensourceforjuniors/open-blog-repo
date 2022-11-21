@@ -17,8 +17,6 @@
 - Sass
 - Prismic
 
-
-
 ## How to run the project
 
 - Clone this repository
