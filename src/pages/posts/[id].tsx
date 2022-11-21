@@ -54,14 +54,14 @@ export default function Post({ post }: PostProps) {
 	)
 }
 
-export const getStaticPaths: GetStaticPaths = async (): Promise<any> => {
+export const getStaticPaths: GetStaticPaths = async () => {
 	return {
 		paths: [],
 		fallback: true
 	}
 }
 
-export const getStaticProps: GetStaticProps = async (context): Promise<any> => {
+export const getStaticProps: GetStaticProps = async context => {
 	const { id } = context.params as { id: string }
 	const prismic = getPrismicClient()
 	const response = await prismic.getByUID('post', String(id), {})
